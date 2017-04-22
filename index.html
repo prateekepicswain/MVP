@@ -13,6 +13,8 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<link rel="stylesheet" href="dist/assets/owl.carousel.min.css">
+		<link rel="stylesheet" href="dist/assets/owl.theme.default.min.css">
 	</head>
 	<body>
 
@@ -130,7 +132,40 @@
 							<section id="four" class="wrapper alt style1">
 								<div class="inner">
 									<h2 class="major">Team</h2>
-									<p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
+									<div class="owl-carousel owl-theme">
+									    <div class="item"><a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a>
+											<h3 class="major">Sed feugiat lorem</h3>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
+											<a href="#" class="special">Learn more</a>
+										</div>
+										<div class="item"><a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a>
+											<h3 class="major">Sed feugiat lorem</h3>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
+											<a href="#" class="special">Learn more</a>
+										</div>
+										<div class="item"><a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a>
+											<h3 class="major">Sed feugiat lorem</h3>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
+											<a href="#" class="special">Learn more</a>
+										</div>
+										<div class="item"><a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a>
+											<h3 class="major">Sed feugiat lorem</h3>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
+											<a href="#" class="special">Learn more</a>
+										</div>
+									    <!-- <div class="item"><h4>2</h4></div>
+									    <div class="item"><h4>3</h4></div>
+									    <div class="item"><h4>4</h4></div>
+									    <div class="item"><h4>5</h4></div>
+									    <div class="item"><h4>6</h4></div>
+									    <div class="item"><h4>7</h4></div>
+									    <div class="item"><h4>8</h4></div>
+									    <div class="item"><h4>9</h4></div>
+									    <div class="item"><h4>10</h4></div>
+									    <div class="item"><h4>11</h4></div>
+									    <div class="item"><h4>12</h4></div> -->
+									</div>
+									<!-- <p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
 									<section class="features">
 										<article>
 											<a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a>
@@ -156,7 +191,7 @@
 											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
 											<a href="#" class="special">Learn more</a>
 										</article>
-									</section>
+									</section> -->
 									<ul class="actions">
 										<li><a href="#" class="button">Browse All</a></li>
 									</ul>
@@ -214,6 +249,31 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+			<script src="dist/owl.carousel.min.js"></script>
+			<script>
+				$(document).ready(function(){
+				  $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+        600:{
+            items:3,
+            nav:false
+        },
+        1000:{
+            items:5,
+            nav:true,
+            loop:false
+        }
+    }
+})
+				});
+			</script>
 
 	</body>
 </html>
